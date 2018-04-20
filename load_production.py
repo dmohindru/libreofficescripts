@@ -36,6 +36,9 @@ def loadProductionData(*args):
   #TODO need to find a better solution to it  
   #[7:] syntax used to get rid of 'file://' part of file url returned by FilePicker
   filePath = FilePicker()[7:]
+  # Return if no file is selected
+  if not filePath:
+    return None
   #Replace a single space in folder name Kingston Accounts which is returned as %20 by FilePicker
   filePath = filePath.replace('%20', ' ')
   # Open XML document using minidom parser
