@@ -350,17 +350,6 @@ def readCartonNum(sheet, row):
   cellNo = cartonNumCol + str(row)
   return sheet.getCellRangeByName(cellNo).String
   
-  
-  
 
-#function to load production data from XML exported by Tally
-def loadProductionData(*args):
-  
-  return None
-
-#function to update master carton xml file used in profit calculation
-def updateMasterXML(*args):
-  
-  return None
   
 
